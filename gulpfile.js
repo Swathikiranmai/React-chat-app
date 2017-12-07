@@ -6,7 +6,7 @@ gulp.task('default', function(callback) {
     serverUrl : "https://sonarcloud.io",
     token : "0d6446b57419652ac731cb706833f7b0f7a548db",
     options : {
-      "sonar.organization": "default",
+      "sonar.organization": "swathikiranmai-github",
       "sonar.login": "admin",
       "sonar.password": "admin"
     }
