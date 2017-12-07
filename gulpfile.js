@@ -7,8 +7,8 @@ gulp.task('default', function(callback) {
     token : "0d6446b57419652ac731cb706833f7b0f7a548db",
     options : {
       "sonar.organization": "default",
-      "login": "admin",
-      "password": "admin"
+      "sonar.login": "admin",
+      "sonar.password": "admin"
     }
   }, callback);
 });
