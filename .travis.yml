@@ -18,4 +18,5 @@ cache:
 
 script:
   - npm run build
-  - npm run sonar-scanner
+  - gulp
+  # - npm run sonar-scanner
