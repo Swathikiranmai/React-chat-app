@@ -18,4 +18,4 @@ cache:
 
 script:
   - npm run build
-  - sonar-scanner
+  - npm run sonar-scanner

@@ -9,7 +9,8 @@
     "test": "mocha './test/**/*.test.js' --compilers js:babel-core/register --recursive",
     "test:watch": "npm test -- --watch",
     "lint": "eslint 'src'",
-    "build": "NODE_ENV=production webpack --config ./webpack.config.prod.js"
+    "build": "NODE_ENV=production webpack --config ./webpack.config.prod.js",
+    "sonar-scanner": "node_modules/sonar-scanner/bin/sonar-scanner"
   },
   "repository": {
     "type": "git",
@@ -53,6 +54,7 @@
     "redux-devtools-dock-monitor": "^1.0.1",
     "redux-devtools-log-monitor": "^1.0.1",
     "redux-mock-store": "0.0.4",
+    "sonar-scanner": "^3.0.3",
     "webpack": "^1.9.10",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-dev-server": "^1.9.0",
