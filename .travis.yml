@@ -10,5 +10,12 @@ addons:
     organization: default
     token:
       secure: "0d6446b57419652ac731cb706833f7b0f7a548db"
+cache:
+  directories:
+    - $HOME/.npm
+    - $HOME/.sonar/cache
+    - $HOME/.sonar/native-sonar-scanner
 
-script: npm run build
+script:
+  - npm run build
+  - sonar-scanner
