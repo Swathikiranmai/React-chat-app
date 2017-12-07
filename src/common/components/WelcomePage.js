@@ -49,14 +49,14 @@ class WelcomePage extends Component {
             name="username"
             value={this.state.username}
             placeholder="Enter username"
-            onChange={::this.handleChange}
+            onChange={this.handleChange.bind(this)}
           />
             <Link to="/signup">
               <Button
                 bsStyle="success"
                 style={{width: '100%'}}
                 type="submit"
-                onClick={::this.handleSubmit}>
+                onClick={this.handleSubmit.bind(this)}>
                   <p style={{margin: '0', padding: '0', fontSize: '1.5em'}}>Sign Up</p>
               </Button>
             </Link>
@@ -89,7 +89,7 @@ class WelcomePage extends Component {
                 name="username"
                 value={this.state.username}
                 placeholder="Enter username"
-                onChange={::this.handleChange}
+                onChange={this.handleChange.bind(this)}
               />
             </div>
             <section style={{margin: 'auto', width: '12em', height: '3.5em'}}>
@@ -98,7 +98,7 @@ class WelcomePage extends Component {
                   bsStyle="success"
                   style={{margin: 'auto', width: '12em', height: '3.5em'}}
                   type="submit"
-                  onClick={::this.handleSubmit}>
+                  onClick={this.handleSubmit.bind(this)}>
                     <p style={{margin: '0', padding: '0', fontSize: '1.5em'}}>Sign Up</p>
                 </Button>
               </Link>

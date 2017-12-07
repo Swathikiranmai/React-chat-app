@@ -95,7 +95,7 @@ class SignUp extends Component {
         Sign Up
         </header>
         <main style={{display: 'flex', justifyContent: 'center'}}>
-          <form onSubmit={::this.handleSubmit} >
+          <form onSubmit={this.handleSubmit.bind(this)} >
             <section style={{height: '6em'}}>
               <Input
                 label="Username"
@@ -108,7 +108,7 @@ class SignUp extends Component {
                 autoFocus="true"
                 placeholder="Enter username"
                 value={this.state.username}
-                onChange={::this.handleChange}
+                onChange={this.handleChange.bind(this)}
               />
             </section>
             <section style={{height: '6em'}}>
@@ -119,7 +119,7 @@ class SignUp extends Component {
                 name="password"
                 value={this.state.password}
                 placeholder="Enter password"
-                onChange={::this.handleChange}
+                onChange={this.handleChange.bind(this)}
               />
             </section>
             <section style={{height: '6em'}}>
@@ -130,14 +130,14 @@ class SignUp extends Component {
                 type="password"
                 name="confirm-password"
                 placeholder="Enter password again" value={this.state.confirmPassword}
-                onChange={::this.handleChange}
+                onChange={this.handleChange.bind(this)}
               />
             </section>
             <Button
               disabled={this.validateUsername() === 'error' || this.validateConfirmPassword() === 'error' && true}
               bsStyle="success"
               style={{width: '100%', height: '4rem', marginTop: '2rem'}}
-              onClick={::this.handleSubmit}
+              onClick={this.handleSubmit.bind(this)}
               type="submit">
               <p style={{color: 'white', margin: '0', padding: '0', fontSize: '1.5em'}} >Sign Up</p>
             </Button>

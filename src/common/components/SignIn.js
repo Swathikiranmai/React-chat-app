@@ -56,7 +56,7 @@ class SignIn extends Component {
           Sign In to Chat
         </header>
         <main style={{display: 'flex', justifyContent: 'center'}}>
-          <form onSubmit={::this.handleSubmit}>
+          <form onSubmit={this.handleSubmit.bind(this)}>
             <Input
               label="Username"
               ref="usernameInput"
@@ -64,7 +64,7 @@ class SignIn extends Component {
               name="username"
               placeholder="Enter username"
               value={this.state.username}
-              onChange={::this.handleChange}
+              onChange={this.handleChange.bind(this)}
             />
             <Input
               label="Password"
@@ -73,7 +73,7 @@ class SignIn extends Component {
               name="password"
               placeholder="Enter password"
               value={this.state.password}
-              onChange={::this.handleChange}
+              onChange={this.handleChange.bind(this)}
             />
             <Button
               bsStyle="success"
