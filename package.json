@@ -9,7 +9,7 @@
     "test": "mocha './test/**/*.test.js' --compilers js:babel-core/register --recursive",
     "test:watch": "npm test -- --watch",
     "lint": "eslint 'src'",
-    "build": "NODE_ENV=production webpack --config ./webpack.config.prod.js",
+    "build": "webpack --config ./webpack.config.prod.js",
     "sonar-scanner": "node_modules/sonar-scanner/bin/sonar-scanner"
   },
   "repository": {
